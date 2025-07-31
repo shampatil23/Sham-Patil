@@ -302,6 +302,7 @@
                 align-items: center;
                 transition: var(--transition);
                 z-index: 1000;
+                padding-top: 80px; /* Added padding to prevent overlap */
             }
 
             .nav-links.active {
@@ -309,11 +310,11 @@
             }
 
             .nav-links li {
-                margin: 20px 0;
+                margin: 15px 0; /* Reduced margin for better mobile spacing */
             }
 
             .nav-links a {
-                font-size: 1.5rem;
+                font-size: 1.3rem; /* Slightly larger for mobile */
             }
 
             .hamburger {
@@ -429,7 +430,7 @@
 
         .hero-image img {
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
             height: auto;
             aspect-ratio: 1/1;
             border-radius: 50%;
@@ -444,7 +445,7 @@
             content: '';
             position: absolute;
             width: 100%;
-            max-width: 500px;
+            max-width: 450px;
             height: auto;
             aspect-ratio: 1/1;
             border-radius: 50%;
@@ -1435,13 +1436,13 @@
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .section {
-                padding: 60px 0;
+                padding: 80px 0; /* Increased padding for better spacing */
             }
 
             .hero-content {
                 flex-direction: column;
                 text-align: center;
-                padding-top: 60px;
+                padding-top: 80px; /* Increased padding to prevent toolbar overlap */
             }
 
             .hero-text {
@@ -1458,7 +1459,7 @@
             }
 
             .hero-image img {
-                max-width: 300px;
+                max-width: 280px; /* Adjusted image size for mobile */
             }
 
             .social-icons {
@@ -1542,13 +1543,40 @@
                 bottom: 20px;
                 right: 20px;
             }
+
+            /* Additional mobile fixes */
+            #home {
+                padding-top: 100px; /* More space for mobile header */
+                min-height: 700px; /* Reduced min-height for mobile */
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem; /* Smaller heading for mobile */
+                margin-bottom: 15px;
+            }
+
+            .typing {
+                font-size: 1.2rem; /* Smaller typing text for mobile */
+            }
+
+            .hero-text p {
+                font-size: 1rem; /* Smaller paragraph text for mobile */
+            }
+
+            .nav-links {
+                padding-top: 100px; /* More space for mobile menu */
+            }
+
+            .nav-links li {
+                margin: 12px 0; /* Reduced margin for mobile menu items */
+            }
         }
     </style>
 </head>
 <body>
     <!-- Preloader -->
     <div id="preloader">
-        <div class="typing-text">Welocome to Sham Patil's Portfolio...</div>
+        <div class="typing-text">Loading Portfolio...</div>
     </div>
 
     <!-- Header -->
@@ -1594,7 +1622,7 @@
                     <a href="#contact" class="btn cta-button">Get In Touch</a>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/ChatGPT Image Jul 24, 2025, 12_11_46 AM.png" alt="Sham Patil">
+                    <img src="images/ChatGPT Image Jul 24, 2025, 12_11_46 AM.png" alt="Sham Patil">
                 </div>
             </div>
         </div>
@@ -1760,7 +1788,7 @@
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/arcwell.png" alt="Project 1">
+                        <img src="images/arcwell.png" alt="Project 1">
                     </div>
                     <div class="project-content">
                         <h3>ArcWell AI</h3>
@@ -1778,7 +1806,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/ks.png" alt="Project 2">
+                        <img src="images/ks.png" alt="Project 2">
                     </div>
                     <div class="project-content">
                         <h3>KS ESPORTS Android App</h3>
@@ -1796,7 +1824,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/woshild.png" alt="Project 3">
+                        <img src="images/woshild.png" alt="Project 3">
                     </div>
                     <div class="project-content">
                         <h3>Woshild</h3>
