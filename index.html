@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #ff0000;
-            --primary-dark: #cc0000;
-            --secondary: #000000;
-            --light: #ffffff;
-            --dark: #0c0c0c;
-            --gray: #999999;
+            --primary: #00a8ff;
+            --primary-dark: #0077b6;
+            --secondary: #0a192f;
+            --light: #e6f1ff;
+            --dark: #020c1b;
+            --gray: #8892b0;
             --transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
-            --box-shadow: 0 10px 30px rgba(255, 0, 0, 0.25);
+            --box-shadow: 0 10px 30px rgba(0, 168, 255, 0.15);
             --text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            --section-bg: #111111;
+            --section-bg: #0a192f;
         }
 
         * {
@@ -135,7 +135,7 @@
 
         .btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.35);
+            box-shadow: 0 15px 40px rgba(0, 168, 255, 0.25);
         }
 
         /* Utility */
@@ -215,7 +215,7 @@
         }
 
         header.scrolled {
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(10, 25, 47, 0.95);
             backdrop-filter: blur(10px);
             padding: 15px 0;
             box-shadow: 0 5px 30px rgba(0, 0, 0, 0.8);
@@ -295,7 +295,7 @@
                 right: -100%;
                 width: 70%;
                 height: 100vh;
-                background: rgba(0, 0, 0, 0.95);
+                background: rgba(10, 25, 47, 0.95);
                 backdrop-filter: blur(10px);
                 flex-direction: column;
                 justify-content: center;
@@ -341,7 +341,7 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            background: linear-gradient(135deg, #020c1b 0%, #0a192f 100%);
             color: var(--light);
             padding-top: 120px;
             box-sizing: border-box;
@@ -411,7 +411,7 @@
         .hero-text p {
             font-size: clamp(1rem, 1.2vw, 1.2rem);
             margin-bottom: 40px;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(230, 241, 255, 0.8);
             max-width: 600px;
             line-height: 1.8;
         }
@@ -434,8 +434,8 @@
             aspect-ratio: 1/1;
             border-radius: 50%;
             object-fit: cover;
-            border: 15px solid rgba(255, 0, 0, 0.1);
-            box-shadow: 0 0 80px rgba(255, 0, 0, 0.3);
+            border: 15px solid rgba(0, 168, 255, 0.1);
+            box-shadow: 0 0 80px rgba(0, 168, 255, 0.2);
             animation: float 6s ease-in-out infinite;
             position: relative;
         }
@@ -448,7 +448,7 @@
             height: auto;
             aspect-ratio: 1/1;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255,0,0,0.2) 0%, rgba(255,0,0,0) 70%);
+            background: radial-gradient(circle, rgba(0,168,255,0.2) 0%, rgba(0,168,255,0) 70%);
             animation: pulse 4s ease-in-out infinite;
             z-index: -1;
         }
@@ -499,7 +499,7 @@
             justify-content: center;
             width: 50px;
             height: 50px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(230, 241, 255, 0.05);
             border-radius: 50%;
             color: var(--light);
             transition: var(--transition);
@@ -516,7 +516,7 @@
         .social-icons a:hover {
             background: var(--primary);
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.3);
         }
 
         .cta-button {
@@ -539,7 +539,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,0,0,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0,168,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
             background-size: cover;
             z-index: -1;
         }
@@ -595,13 +595,13 @@
         }
 
         .stat-item {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(230, 241, 255, 0.03);
             padding: 30px;
             border-radius: 10px;
             box-shadow: var(--box-shadow);
             text-align: center;
             transition: var(--transition);
-            border: 1px solid rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(0, 168, 255, 0.1);
             backdrop-filter: blur(10px);
             transform: translateY(30px);
             opacity: 0;
@@ -619,7 +619,7 @@
 
         .stat-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 15px 40px rgba(0, 168, 255, 0.2);
         }
 
         .stat-item h4 {
@@ -647,7 +647,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,0,0,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0,168,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
             background-size: cover;
             z-index: -1;
         }
@@ -659,7 +659,7 @@
         }
 
         .skill-card {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(230, 241, 255, 0.03);
             padding: 40px 30px;
             border-radius: 15px;
             box-shadow: var(--box-shadow);
@@ -668,7 +668,7 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
-            border: 1px solid rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(0, 168, 255, 0.1);
             backdrop-filter: blur(10px);
             transform: translateY(50px);
             opacity: 0;
@@ -695,7 +695,7 @@
         .skill-card:hover {
             transform: translateY(-10px);
             color: white;
-            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 168, 255, 0.3);
         }
 
         .skill-card:hover::before {
@@ -724,6 +724,135 @@
             font-size: 1rem;
         }
 
+        /* Services Section */
+        #services {
+            position: relative;
+        }
+
+        #services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0,168,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: rgba(230, 241, 255, 0.03);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            position: relative;
+            border: 1px solid rgba(0, 168, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        .service-card.animated {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 168, 255, 0.3);
+        }
+
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,168,255,0.3));
+            z-index: 1;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+
+        .service-content {
+            padding: 30px;
+        }
+
+        .service-content h3 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .service-content p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .service-features {
+            margin-bottom: 25px;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: var(--gray);
+        }
+
+        .service-features li i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+
+        .service-price {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .service-btn {
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .service-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
         /* Projects Section */
         #projects {
             position: relative;
@@ -736,7 +865,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,0,0,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0,168,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
             background-size: cover;
             z-index: -1;
         }
@@ -748,13 +877,13 @@
         }
 
         .project-card {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(230, 241, 255, 0.03);
             border-radius: 15px;
             overflow: hidden;
             box-shadow: var(--box-shadow);
             transition: var(--transition);
             position: relative;
-            border: 1px solid rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(0, 168, 255, 0.1);
             backdrop-filter: blur(10px);
             transform: translateY(50px);
             opacity: 0;
@@ -767,7 +896,7 @@
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 168, 255, 0.3);
         }
 
         .project-img {
@@ -783,7 +912,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,0,0,0.3));
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,168,255,0.3));
             z-index: 1;
         }
 
@@ -820,7 +949,7 @@
         }
 
         .tech-tag {
-            background: rgba(255, 0, 0, 0.1);
+            background: rgba(0, 168, 255, 0.1);
             color: var(--primary);
             padding: 8px 15px;
             border-radius: 50px;
@@ -868,7 +997,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,0,0,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0,168,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
             background-size: cover;
             z-index: -1;
         }
@@ -877,7 +1006,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(230, 241, 255, 0.1);
             padding-bottom: 10px;
         }
 
@@ -920,7 +1049,7 @@
         }
 
         .qualification-item {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(230, 241, 255, 0.03);
             padding: 40px;
             border-radius: 15px;
             box-shadow: var(--box-shadow);
@@ -929,7 +1058,7 @@
             display: flex;
             align-items: flex-start;
             gap: 30px;
-            border: 1px solid rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(0, 168, 255, 0.1);
             backdrop-filter: blur(10px);
             transform: translateY(50px);
             opacity: 0;
@@ -942,7 +1071,7 @@
 
         .qualification-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 15px 40px rgba(0, 168, 255, 0.2);
         }
 
         .qualification-icon {
@@ -985,7 +1114,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,0,0,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0,168,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
             background-size: cover;
             z-index: -1;
         }
@@ -1014,7 +1143,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,0,0,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0,168,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
             background-size: cover;
             z-index: -1;
         }
@@ -1074,11 +1203,11 @@
         }
 
         .contact-form {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(230, 241, 255, 0.03);
             padding: 40px;
             border-radius: 15px;
             box-shadow: var(--box-shadow);
-            border: 1px solid rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(0, 168, 255, 0.1);
             backdrop-filter: blur(10px);
             transform: translateY(50px);
             opacity: 0;
@@ -1097,11 +1226,11 @@
         .form-control {
             width: 100%;
             padding: 15px 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(230, 241, 255, 0.1);
             border-radius: 10px;
             font-family: 'Inter', sans-serif;
             transition: var(--transition);
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(230, 241, 255, 0.03);
             color: var(--light);
             font-size: 1rem;
         }
@@ -1113,7 +1242,7 @@
         .form-control:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 0 3px rgba(0, 168, 255, 0.2);
         }
 
         textarea.form-control {
@@ -1161,7 +1290,7 @@
 
         .submit-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 168, 255, 0.4);
         }
 
         /* Footer */
@@ -1203,7 +1332,7 @@
         }
 
         .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(230, 241, 255, 0.7);
             transition: var(--transition);
             font-size: 1.1rem;
             font-weight: 600;
@@ -1241,7 +1370,7 @@
             justify-content: center;
             width: 50px;
             height: 50px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(230, 241, 255, 0.05);
             border-radius: 50%;
             margin: 0 15px;
             color: var(--light);
@@ -1252,14 +1381,14 @@
         .footer-social a:hover {
             background: var(--primary);
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.3);
         }
 
         .copyright {
             font-size: 1rem;
-            color: rgba(255, 255, 255, 0.5);
+            color: rgba(230, 241, 255, 0.5);
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(230, 241, 255, 0.1);
         }
 
         /* Back to Top Button */
@@ -1328,6 +1457,10 @@
                 margin-top: 30px;
             }
 
+            .hero-image img {
+                max-width: 300px;
+            }
+
             .social-icons {
                 justify-content: center;
             }
@@ -1350,6 +1483,7 @@
                 bottom: -10px;
             }
 
+            .services-container,
             .projects-container {
                 grid-template-columns: 1fr;
             }
@@ -1391,6 +1525,7 @@
                 font-size: 3rem;
             }
 
+            .service-card,
             .project-card {
                 margin-bottom: 30px;
             }
@@ -1425,6 +1560,7 @@
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#qualifications">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -1458,7 +1594,7 @@
                     <a href="#contact" class="btn cta-button">Get In Touch</a>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/ChatGPT Image Jul 24, 2025, 12_11_46 AM.png" alt="Sham Patil">
+                    <img src="images/ChatGPT Image Jul 24, 2025, 12_11_46 AM.png" alt="Sham Patil">
                 </div>
             </div>
         </div>
@@ -1548,6 +1684,75 @@
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Android Development">
+                    </div>
+                    <div class="service-content">
+                        <h3>Android App Development</h3>
+                        <p>Custom Android application development tailored to your business needs, from concept to deployment.</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Native Android development</li>
+                                <li><i class="fas fa-check"></i> Material Design UI/UX</li>
+                                <li><i class="fas fa-check"></i> Firebase integration</li>
+                                <li><i class="fas fa-check"></i> API integration</li>
+                                <li><i class="fas fa-check"></i> Play Store deployment</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">Starting at ₹15,000</div>
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Web Development">
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Development</h3>
+                        <p>Responsive and dynamic websites built with modern technologies for optimal performance.</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Frontend development</li>
+                                <li><i class="fas fa-check"></i> Backend development</li>
+                                <li><i class="fas fa-check"></i> Database integration</li>
+                                <li><i class="fas fa-check"></i> Responsive design</li>
+                                <li><i class="fas fa-check"></i> SEO optimization</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">Starting at ₹10,000</div>
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="College Freelancing">
+                    </div>
+                    <div class="service-content">
+                        <h3>College Freelancing</h3>
+                        <p>Specialized services for college students including projects, assignments, and academic support.</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Academic projects</li>
+                                <li><i class="fas fa-check"></i> Mini and major projects</li>
+                                <li><i class="fas fa-check"></i> Documentation support</li>
+                                <li><i class="fas fa-check"></i> Project deployment</li>
+                                <li><i class="fas fa-check"></i> Presentation support</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">Starting at ₹5,000</div>
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
@@ -1555,7 +1760,7 @@
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/arcwell.png" alt="Project 1">
+                        <img src="images/arcwell.png" alt="Project 1">
                     </div>
                     <div class="project-content">
                         <h3>ArcWell AI</h3>
@@ -1573,7 +1778,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/ks.png" alt="Project 2">
+                        <img src="images/ks.png" alt="Project 2">
                     </div>
                     <div class="project-content">
                         <h3>KS ESPORTS Android App</h3>
@@ -1591,7 +1796,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/woshild.png" alt="Project 3">
+                        <img src="images/woshild.png" alt="Project 3">
                     </div>
                     <div class="project-content">
                         <h3>Woshild</h3>
@@ -1775,6 +1980,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -1918,7 +2124,7 @@
 
         // Animate Elements on Scroll
         const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.about-text, .stat-item, .skill-card, .project-card, .qualification-item, .contact-item, .contact-form, .resume-btn');
+            const elements = document.querySelectorAll('.about-text, .stat-item, .skill-card, .service-card, .project-card, .qualification-item, .contact-item, .contact-form, .resume-btn');
             
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
@@ -1983,7 +2189,7 @@
                         }
                     },
                     color: {
-                        value: "#ff0000"
+                        value: "#00a8ff"
                     },
                     shape: {
                         type: "circle",
@@ -2018,7 +2224,7 @@
                     line_linked: {
                         enable: true,
                         distance: 150,
-                        color: "#ff0000",
+                        color: "#00a8ff",
                         opacity: 0.4,
                         width: 1
                     },
