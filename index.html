@@ -171,40 +171,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Preloader */
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--dark);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-        }
-
-        .typing-text {
-            font-size: clamp(1.5rem, 3vw, 2rem);
-            color: var(--light);
-            white-space: nowrap;
-            border-right: 2px solid var(--light);
-            overflow: hidden;
-            width: 0;
-            animation: typing 4s steps(30, end) forwards, blink 0.7s step-end infinite;
-            text-align: center;
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 24ch; }
-        }
-
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-
         /* Header & Navigation */
         header {
             position: fixed;
@@ -1587,10 +1553,6 @@
     </style>
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="typing-text">Welcome to Sham Patil's Portfolio...</div>
-    </div>
 
     <!-- Header -->
     <header id="header">
@@ -1853,6 +1815,82 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/greenroots.png" alt="Green Root">
+                    </div>
+                    <div class="project-content">
+                        <h3>GreenRoots</h3>
+                        <p>A dynamic environmental website dedicated to promoting sustainability and tree planting initiatives. Features an interactive platform with smooth animations, Firebase integration for real-time content management, and an admin panel for managing environmental campaigns. Together, we can turn cities green and make our planet breathe again.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shampatil23/Green"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://shampatil23.github.io/Green/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/feetness tracker.jpg" alt="Fitness Tracker">
+                    </div>
+                    <div class="project-content">
+                        <h3>Fitness Tracker</h3>
+                        <p>A comprehensive fitness tracking application that helps users monitor their daily activities, workouts, and health metrics. Features include activity logging, progress tracking, calorie counter, workout plans, and personalized fitness goals. Built with a clean, intuitive interface to make fitness tracking simple and motivating.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Material Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shampatil23/Fitness_tracker"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/shampatil23/Fitness_tracker"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/flashcardquizapp.png" alt="Flashcard Quiz App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Flashcard Quiz App</h3>
+                        <p>An interactive learning application featuring flashcards and quizzes to help students study effectively. Users can create custom flashcard decks, take timed quizzes, track their progress, and review incorrect answers. Perfect for exam preparation and memorization with a user-friendly swipe interface and score tracking system.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Material UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shampatil23/Flashcard-Quiz-"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/shampatil23/Flashcard-Quiz-"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/randomquategenerator.png" alt="Random Quote Generator">
+                    </div>
+                    <div class="project-content">
+                        <h3>Random Quote Generator</h3>
+                        <p>An inspiring quote generator app that displays motivational and thought-provoking quotes at the tap of a button. Features include random quote generation, favorite quotes collection, share functionality, and a beautiful minimalist design. Perfect for daily motivation and inspiration with quotes from various categories and authors.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">Material Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shampatil23/RandomQuoteApp"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/shampatil23/RandomQuoteApp"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1980,12 +2018,6 @@
                             <a href="tel:+919529811731">+91 9529811731</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                       
-                    </div>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
@@ -2042,14 +2074,6 @@
 
     <!-- JavaScript -->
     <script>
-        // Preloader with typing effect
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const preloader = document.getElementById('preloader');
-                preloader.style.opacity = '0';
-                preloader.style.pointerEvents = 'none';
-            }, 2200);
-        });
 
         // Home page typing effect
         const typingElement = document.getElementById('typing');
